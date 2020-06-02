@@ -1,0 +1,91 @@
+.moment-slider {
+  width: 100%;
+  // height: 100%;
+  margin-bottom: 40px;
+  background-color: #fff;
+  border-radius: $default-radius;
+
+  &__title {
+    font-size: 14px;
+    text-align: center;
+    padding: 15px 15px 5px 15px;
+  }
+
+  &__item {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70%;
+  }
+
+  &__details {
+    margin-bottom: 30px;
+  }
+
+  &__slides {
+    text-align: center;
+    height: 100%;
+  }
+
+  &__image {
+    display: block;
+  }
+
+  &__product-name {
+    text-overflow: ellipsis;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  &__price {
+    color: $primary-color;
+    font-size: 14px;
+
+    &-value {
+
+    }
+
+    &-currency {
+
+    }
+  }
+
+  &__loader {
+    width: 100%;
+    height: 5px;
+
+    &-wrapper {
+      width: 0%;
+      max-width: 100%;
+      // animation: loader 7s ease-in-out infinite;
+      // animation-delay: 1s;
+      background-color: lighten($secondary-color, 20%);
+      border-radius: $default-radius;
+    }
+  }
+
+  @keyframes loader {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+
+  @keyframes scaling {
+    0% {
+      transform: scale(.8);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .owl-item.active>.moment-slider__item {
+    animation: scaling 0.4s ease-in-out;
+  }
+}
+

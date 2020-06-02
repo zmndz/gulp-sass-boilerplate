@@ -1,0 +1,259 @@
+.special-slider {
+	width: 100%;
+	background-color: #fff;
+	border-radius: $default-radius;
+	min-height: 200px;
+	padding: 15px 30px;
+
+  &__wrapper {
+		margin-bottom: 40px;
+  }
+
+  &__responsive-title {
+  	margin-right: 10px;
+  	margin-bottom: 20px;
+  	color: $secondary-text-color;
+  }
+
+  &__details {
+  	text-align: center;
+  	// width: calc(100% - 300px);
+  	width: unset;
+  }
+
+  &__title {
+  	font-weight: bold;
+  	text-overflow: ellipsis;
+  	margin-bottom: 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    display: block;
+  }
+
+  &__price {
+  	color: $primary-color;
+  	text-align: center;
+  	margin-bottom: 40px;
+
+  	&--disabled {
+  		text-decoration: line-through;
+  		color: lighten($secondary-text-color, 30%);
+  		margin: 0 5px;
+  	}
+
+  	&--default {
+  		margin: 0 5px;
+  	}
+  }
+
+  &__description {
+  	font-size: 18px;
+  	margin-bottom: 30px;
+  	color: lighten($secondary-text-color, 30%);
+
+  	&--item {
+  		display: flex;
+  		align-items: center;
+  		justify-content: center;
+  		margin: 4px 0;
+  	}
+
+  	&--label {
+  		font-size: 12px;
+  		margin: 0px 4px;
+  		color: lighten($secondary-text-color, 30%);
+  	}
+  }
+
+  &__counter {
+  	display: flex;
+  	flex-wrap: wrap;
+  	justify-content: center;
+  	width: 100%;
+  	margin-bottom: 40px;
+
+  	&-day {
+	  		display: flex;
+	  		align-items: center;
+	  		justify-content: center;
+	  		flex-direction: column;
+  			margin: 0 3px;
+
+  		&--value {
+	  		width: 50px;
+	  		height: 50px;
+	  		border-radius: 50%;
+	  		background-color: $primary-background-color;
+	  		line-height: 56px;
+	  		text-align: center;
+	  		font-weight: bold;
+  			font-size: 18px;
+  		}
+
+  		&--label {
+  			font-size: 10px;
+  		}
+  	}
+
+  	&-hour {
+	  		display: flex;
+	  		align-items: center;
+	  		justify-content: center;
+	  		flex-direction: column;
+  			margin: 0 3px;
+
+  		&--value {
+	  		width: 50px;
+	  		height: 50px;
+	  		border-radius: 50%;
+	  		background-color: $primary-background-color;
+	  		line-height: 56px;
+	  		text-align: center;
+	  		font-weight: bold;
+  			font-size: 18px;
+  		}
+
+  		&--label {
+  			font-size: 10px;
+  		}
+  	}
+
+  	&-minute {
+	  		display: flex;
+	  		align-items: center;
+	  		justify-content: center;
+	  		flex-direction: column;
+  			margin: 0 3px;
+
+  		&--value {
+	  		width: 50px;
+	  		height: 50px;
+	  		border-radius: 50%;
+	  		background-color: $primary-background-color;
+	  		line-height: 56px;
+	  		text-align: center;
+	  		font-weight: bold;
+  			font-size: 18px;
+  		}
+
+  		&--label {
+  			font-size: 10px;
+  		}
+  	}
+
+  	&-second {
+	  		display: flex;
+	  		align-items: center;
+	  		justify-content: center;
+	  		flex-direction: column;
+  			margin: 0 3px;
+
+  		&--value {
+	  		width: 50px;
+	  		height: 50px;
+	  		border-radius: 50%;
+	  		background-color: rgba($primary-color, 0.3);
+	  		color: $primary-color;
+	  		line-height: 56px;
+	  		text-align: center;
+	  		font-weight: bold;
+  			font-size: 18px;
+	  		backface-visibility: hidden;
+
+	  		span {
+	  			display: block;
+		  		backface-visibility: hidden;
+		  		transform: translateZ(0);
+
+				  animation: counter-pulse 0.5s ease-in-out infinite alternate;
+	  			animation-fill-mode: both;
+	  		}
+  		}
+
+  		&--label {
+  			font-size: 10px;
+  		}
+  	}
+  }
+
+  &__product {
+
+  	&-image {
+  		display: flex;
+  		position: relative;
+  		// max-width: 100%;
+			height: 100%;
+	    justify-content: center;
+	    align-items: center;
+  	}
+
+  	&-badge {
+  		width: 70px;
+  		position: absolute;
+  		left: 0;
+  		top: 0;
+  		transform: rotate(20deg);
+
+  		.cls-3 {
+  			fill: $primary-color;
+  		}
+
+  		.cls-4 {
+  			fill: $primary-color;
+  			stroke: #fff;
+  			stroke-width: 3px;
+  			transition: all 0.2s;
+  		}
+  	}
+
+  	&-discount {
+  		color: #fff;
+  		font-size: 14px;
+  		position: absolute;
+  		top: 24px;
+  		left: 18px;
+  		transform: rotate(-20deg);
+  	}
+  }
+
+  &__quantity {
+  	display: flex;
+  	flex-direction: column;
+  	width: 100%;
+  	margin-bottom: 20px;
+
+  	&-labels {
+  		display: flex;
+  		justify-content: space-between;
+  		align-items: center;
+  		font-size: 14px;
+
+  	}
+  }
+
+  &__progress-bar {
+		height: 5px;
+		background-color: $secondary-background-color;
+		width: 100%;
+		border-radius: 0.25rem;
+		overflow: hidden;
+
+		&--fill {
+			background-color: $primary-color;
+			width: 20%;
+			height: 100%;
+		}
+	}
+
+	@keyframes counter-pulse {
+	  0% {
+  		color: $primary-color;
+  		transform: scale(1);
+	  }
+	  100% {
+  		color: rgba($primary-color, 0.4);
+  		// font-size: 22px;
+  		transform: scale(1.2);
+	  }
+	}
+}

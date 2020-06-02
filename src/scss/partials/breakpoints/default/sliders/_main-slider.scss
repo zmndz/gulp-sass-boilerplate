@@ -1,0 +1,96 @@
+.main-slider {
+  position: relative !important;
+  border-radius: $default-radius;
+  overflow: hidden;
+
+  &__wrapper {
+    margin-bottom: 40px;
+  }
+
+  &__item {
+    border-radius: $default-radius;
+    overflow: hidden;
+
+  }
+
+  &__image {
+    // border-radius: $default-radius !important;
+  }
+
+  .owl-nav {
+
+    .owl-prev, .owl-next{
+      position: absolute;
+      background-color: #f5f5f5 !important;
+      width: 60px !important;
+      height: 60px !important;
+      line-height: 60px !important;
+      border-radius: 50px !important;
+      margin: 2px !important;
+      font-size: 40px !important;
+      top: 50% !important;
+      opacity: 0.5;
+      text-align: center;
+      transform: translateY(-50%) !important;
+      transition: 0.2s all !important;
+
+      &:hover {
+        color: $primary-text-color !important;
+        opacity: 0.9;
+      }
+
+      &:focus {
+        outline: none !important;
+      }
+
+    }
+
+    .owl-next {
+      left: 0 !important;
+      margin-left: 10px !important;
+    }
+
+    .owl-prev {
+      right: 0 !important;
+      margin-right: 10px !important;
+    }
+
+    &:hover {
+      opacity: 1 !important;
+    }
+  }
+
+  .owl-dots {
+    position: absolute !important;
+    text-align: center !important;
+    bottom: 0px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+
+    .owl-dot {
+
+      span {
+        margin-left: 3px !important;
+        margin-right: 3px !important;
+        background-color: #fff !important;
+        opacity: 0.5 !important;
+        transition: all 0.2s all !important;
+      }
+
+      &:focus {
+        outline: none !important;
+      }
+
+    }
+
+    .owl-dot.active span {
+      width: 20px !important;
+      opacity: 1 !important;
+    }
+
+
+    &:focus {
+      outline: none !important;
+    }
+  }
+}

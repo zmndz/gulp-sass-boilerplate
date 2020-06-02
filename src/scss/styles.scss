@@ -1,16 +1,18 @@
+@import 'partials/fontface/_fonts';
 @import 'partials/variables/_colors';
 
+// No media query since this is the default style
+@import 'partials/breakpoints/default/_default';
 
-* {
-	margin: 0px;
-	padding: 0px;
-	box-sizing: border-box;	
-}
+// Small devices (landscape phones, 576px and up)
+@import 'partials/breakpoints/small/_small';
 
-body {
-	.container {
-		width: 100vw;
-		height: 100vh;
-		background-color: $primary-background-color;
-	}
-}
+// Medium devices (tablets, 768px and up)
+@import 'partials/breakpoints/medium/_medium';
+
+// Large devices (desktops, 992px and up)
+@import 'partials/breakpoints/large/_large';
+
+// Extra large devices (large desktops, 1200px and up)
+@import 'partials/breakpoints/extra/_extra';
+

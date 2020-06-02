@@ -1,0 +1,48 @@
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 575.98px) {
+	.special-slider {
+
+	  &__details {
+  		width: calc(100% - 300px);
+	  }
+	}
+
+	// .special-slider {
+
+	//   &__counter {
+
+	//   	&-day {
+	//   		&--value {
+	// 	  		width: 40px;
+	// 	  		height: 40px;
+	//   			line-height: 46px;
+	//   		}
+	//   	}
+
+	//   	&-hour {
+	//   		&--value {
+	// 	  		width: 40px;
+	// 	  		height: 40px;
+	//   			line-height: 46px;
+	//   		}
+	//   	}
+
+	//   	&-minute {
+	//   		&--value {
+	// 	  		width: 40px;
+	// 	  		height: 40px;
+	//   			line-height: 46px;
+	//   		}
+	//   	}
+
+	//   	&-second {
+	//   		&--value {
+	// 	  		width: 40px;
+	// 	  		height: 40px;
+	//   			line-height: 46px;
+	// 	  	}
+	//   	}
+	//   }
+	// }
+}
+

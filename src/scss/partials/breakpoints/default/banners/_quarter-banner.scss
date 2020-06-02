@@ -1,0 +1,16 @@
+.quarter-banner {
+
+  &__wrapper {
+    margin-bottom: 20px;
+  }
+
+  &__link {
+    display: block;
+    border-radius: $default-radius;
+    overflow: hidden;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}

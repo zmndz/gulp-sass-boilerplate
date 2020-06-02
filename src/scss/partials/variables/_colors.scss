@@ -2,17 +2,13 @@
 
 $primary-background-color:          $material-theme-light-app;
 $secondary-background-color:        $material-grey-200;
-$primary-color:                     $material-text-light-primary;
-$secondary-color:                   $material-text-light-secondary;
-$primary-text-color:                #9C27B0;
-$secondary-text-color:              #673AB7;
-$link-active-color:                 #9C27B0;
-$link-hover-color:                  #673AB7;
-$border-color:                      #3F51B5;
-$shadow-color:                      #cecece;
+$primary-color:                     $material-cyan-500;
+$secondary-color:                   $material-grey-500;
+$primary-text-color:                $material-grey-600;
+$secondary-text-color:              $material-grey-700;
+$link-active-color:                 $primary-text-color;
+$link-hover-color:                  $primary-color;
+$border-color:                      $material-grey-300;
+$shadow-color:                      $material-grey-400;
 
-$default-font-name:                 #3F51B5;
-$default-font-size:                 14px;
-$default-radius:                   4px;
-$default-box-shadow:                0 2px 4px $shadow-color;
-;
+

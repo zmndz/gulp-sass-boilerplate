@@ -11,3 +11,6 @@ yarn.lock
 
 # Dependency directories
 node_modules/
+
+dist
+raw_assets

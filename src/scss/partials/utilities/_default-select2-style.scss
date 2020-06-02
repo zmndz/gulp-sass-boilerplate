@@ -1,0 +1,34 @@
+.select2-dropdown {
+  background-color: $primary-background-color;
+  font-size: 12px;
+  border: 1px solid $border-color !important;
+}
+.select2-container--default .select2-selection--single {
+  border: none;
+  font-size: 10px;
+}
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+  background-color: $primary-color;
+}
+.select2-container--default .select2-search--dropdown .select2-search__field {
+    border: none;
+    border-radius: $default-radius;
+    padding: 8px !important;
+
+    &:focus {
+      outline: none;
+      box-shadow: $default-box-shadow;
+    }
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+  border-color: lighten($primary-text-color, 20%) transparent transparent transparent;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  color: lighten($primary-text-color, 20%)
+}
+.select2-container--default .select2-selection--single {
+
+  &:focus {
+    outline: none;
+  }
+}

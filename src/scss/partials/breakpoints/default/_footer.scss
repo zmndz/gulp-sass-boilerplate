@@ -1,0 +1,173 @@
+.footer {
+  width: 100%;
+  background-color: #fff;
+
+  &__wrapper {
+
+  }
+
+  &__description {
+    background-color: darken($secondary-background-color, 2%);
+    padding: 15px;
+
+    &-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px;
+    }
+
+    &-icon {
+      display: flex;
+      font-size: 40px;
+      padding-left: 20px;
+    }
+
+    &-details {
+      font-size: 12px;
+
+      &-title {
+        font-weight: bold;
+      }
+
+      &-text {
+
+      }
+    }
+  }
+
+  &__main {
+    background-color: #fff;
+    padding: 30px;
+  }
+
+  &__links {
+    list-style: none;
+    margin-bottom: 0;
+
+    &-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+
+    &-link {
+      font-size: 12px;
+      line-height: 24px;
+    }
+  }
+
+  &__namad {
+    max-width: 130px;
+
+    &-wrapper {
+      display: flex;
+      justify-content: center;
+    }
+
+    &-item {
+      opacity: 1;
+      transition: all 0.2s;
+
+      &:hover {
+        opacity: 0.8
+      }
+    }
+  }
+
+  &__shop {
+
+    &-description {
+      display: flex;
+      padding: 20px;
+      flex-direction: column
+    }
+
+    &-logo {
+      min-width: 140px;
+      max-width: 140px;
+      text-align: center;
+    }
+
+    &-about {
+      margin-top: 20px;
+      margin-right: 0px;
+    }
+
+    &-about-title {
+      font-weight: bold;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    &-about-text {
+      font-size: 12px;
+      line-height: 24px;
+    }
+  }
+
+  &__copyright {
+    font-size: 12px;
+  }
+}
+
+.newsletter {
+  margin-top: 20px;
+
+  &__title {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  &__description {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+
+  &__controls {
+    display: flex;
+  }
+
+  &__input-email {
+    display: block;
+    background: $secondary-background-color;
+    border: none;
+    transition: all 0.2s;
+    font-size: 14px;
+    border-radius: $default-radius;
+    padding: 10px;
+    color: $primary-text-color;
+    height: auto;
+    width: 100%;
+    
+    &:focus {
+      outline: none;
+      box-shadow: $default-box-shadow;
+      background: lighten($secondary-background-color, 2%);
+    }
+  }
+
+  &__input-submit {
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    padding: .375rem .75rem;
+    font-size: 14px;
+    line-height: 1.5;
+    border-radius: 20px;
+    border: none;
+    background-color: $primary-text-color;
+    color: #fff;
+    box-shadow: none!important;
+    transition: all 0.2s;
+    cursor: pointer;
+    margin-right: 10px;
+
+    &:hover {
+      background-color: lighten($primary-text-color, 10%);
+    }
+  }
+}
